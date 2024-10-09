@@ -37,7 +37,7 @@ Con CD moverse a la carpeta donde fue descargado y escribir el siguiente comando
 ```python
 python3 get-pip.py
 ```
-$${\color{lightblue}\textrm{Mac o Linux}}$$
+$${\color{lightblue}\textrm{Mac}}$$
 
 En terminal escribir
 ```python
@@ -108,13 +108,11 @@ cadena.split('*')
 
 
 ```python
-# toma en la cadena desde el índice inicio hasta el indice fin-1 
-pos='Escuela de Otoño de Biología Matemática'
+#pos[inicio:fin:saltos] 
+# toma en la cadena desde el índice inicio hasta el indice fin-1
 # saltos dice de cuanto en cuanto se van tomando. Si no se pone, se va de uno en uno
-pos[inicio:final:saltos]
-```
 
-```python 
+pos='Escuela de Otoño de Biología Matemática'
 pos[0]
 pos[1:4]
 pos[5:2]
@@ -137,13 +135,8 @@ L2=[5,'gato',1,0]
 c=[]
 #puede ser una lista de listas 
 Listas=[12,[‘a’,1,2,3],[b,[c,14]]]
-#genera una lista desde inicio hasta final menos uno.
-#paso si se da debe ser entero,indica el tamaño de paso.
-range(inicio,final,paso)
 ```
-
-tutorial 
-https://recursospython.com/guias-y-manuales/listas-y-tuplas/
+Operaciones con listas
 
 ```python
 L1+L2
@@ -159,24 +152,20 @@ L2.append(-12)
 
 $${\color{lightblue}\textrm{Tuplas}}$$
 
+> [!NOTE]
+> Las tuplas son inmutables, es decir, no se pueden cambiar los valores asignados
+
 ```python
 #tupla de objetos
 T=(1,2,4,'x0',-13)
-#tupla de un elemento
-f=(4,)
-#tupla vacia para 2.x, en 3.x no lleva coma
-g=(,)
-#tupla de tuplas
-Tupla=(12,(4,[1,3]),(3,[6,2]))
-```
-
-> [!NOTE]
-> Las tuplas son inmutables
-
-```python
-#índice
 T[0]
 T[0]='hola'
+#tupla de un elemento
+f=(4,)
+#tupla vacia 
+g=()
+#tupla de tuplas
+Tupla=(12,(4,[1,3]),(3,[6,2]))
 #índice de la tupla de tuplas
 Tupla[2][1]
 ```
@@ -196,11 +185,10 @@ len(dic1)
 dic1.keys()
 dic1.values()
 dic1[(3,4)]=[5,7,'si se puede']
-dic1['nombre']='Miguel'
+dic1['coyote']='gallinas'
 del dic1['jaguar']
 dic1['ocelote'].split()
 dic1['ocelote'].split(',')
-dic1[[3,4]]='no se puede'
 ```
 
 $${\color{lightblue}\textrm{Otra forma de hacer diccionarios}}$$
@@ -220,18 +208,20 @@ D=dict(zip(lista1,lista2))
 
 $${\color{lightblue}\textrm{\large Construcción de gráficas con NetworkX}}$$
 
+Gráficas no dirigidas
 ```python
 import networkx as nx
-G = nx.Graph() # Grafo no dirigido
+import matplotlib.pyplot as plt
+G = nx.Graph()
 G.add_nodes_from([2,'x','y',9])
 G.add_edges_from([(2,'x'),('x','y'),('y',9)])
-G.size() #cantidad de aristas
-G.order() #cantidad de nodos
-import matplotlib.pyplot as plt
 nx.draw(G)
 plt.show()
-G.order()    #orden de gráfica
-G.size()      #numero de aristas
+```
+Número de vértices y número de aristas de una gráfica
+```python
+G.order()
+G.size()      
 ```
 
 ```python
@@ -245,7 +235,6 @@ G.remove_edges_from( [(2,'x'),(23,45)] ) 	#elimina aristas
 ```
 
 ```python 
-import matplotlib.pyplot as plt
 K10 = nx.complete_graph(10)
 K10.nodes()
 K10.size()
