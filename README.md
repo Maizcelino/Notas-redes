@@ -22,6 +22,7 @@ https://code.visualstudio.com/download
 $${\color{lightblue}\textrm{\large Instalación de pip3}}$$
 
 $${\color{lightblue}\textrm{Windows}}$$
+
 Abrir terminal en windows
 1. Haz clic derecho en el menú Inicio de Windows
 2. Haz clic izquierdo en la opción Run o Ejecutar.
@@ -37,6 +38,7 @@ Con CD moverse a la carpeta donde fue descargado y escribir el siguiente comando
 python3 get-pip.py
 ```
 $${\color{lightblue}\textrm{Mac o Linux}}$$
+
 En terminal escribir
 ```python
 curl -O https://bootstrap.pypa.io/get-pip.py
