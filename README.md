@@ -211,7 +211,19 @@ D=dict(zip(lista1,lista2))
 
 $${\color{lightblue}\textrm{Construcción de gráficas con NetworkX}}$$
 
-aqui se pone
+```python
+import networkx as nx
+G = nx.Graph() # Grafo no dirigido
+G.add_nodes_from([2,’x’,’y’,9])
+G.add_edges_from([(2,’x’),(’x’,’y’),(’y’,9)])
+G.size() #cantidad de aristas
+G.order() #cantidad de nodos
+import matplotlib.pyplot as plt
+nx.draw(G)
+plt.show()
+G.order()    #orden de gráfica
+G.size()      #numero de aristas
+```
 
 $${\color{lightblue}\textrm{Medidas usuales de redes}}$$
 
