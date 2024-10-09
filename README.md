@@ -214,8 +214,8 @@ $${\color{lightblue}\textrm{Construcción de gráficas con NetworkX}}$$
 ```python
 import networkx as nx
 G = nx.Graph() # Grafo no dirigido
-G.add_nodes_from([2,’x’,’y’,9])
-G.add_edges_from([(2,’x’),(’x’,’y’),(’y’,9)])
+G.add_nodes_from([2,'x','y',9])
+G.add_edges_from([(2,'x'),('x','y'),('y',9)])
 G.size() #cantidad de aristas
 G.order() #cantidad de nodos
 import matplotlib.pyplot as plt
@@ -223,6 +223,16 @@ nx.draw(G)
 plt.show()
 G.order()    #orden de gráfica
 G.size()      #numero de aristas
+```
+
+```python
+# Algunas modificaciones
+G.add_node(12)				#agrega un nodo
+G.add_edge(23,45)			#agrega aristas, incluso si no tiene nodos
+G.nodes()			len(G)			#muestra los nodos
+G.edges()						#muestra las aristas
+G.remove_node(9)				#elimina nodos
+G.remove_edges_from( [(2,'x'),(23,45)] ) 	#elimina aristas
 ```
 
 $${\color{lightblue}\textrm{Medidas usuales de redes}}$$
