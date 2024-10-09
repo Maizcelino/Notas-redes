@@ -252,14 +252,14 @@ K10.neighbors(3)
 ```
 
 ```python 
->> Gw = nx.Graph()
->> Gw.add_edge('a','b', weight = 0.1)
->> Gw.add_edge('b','c', weight = 1.5)
->> Gw.add_edge('a','c', weight = 1.0)
->> Gw.add_edge('c','d', weight = 2.2)
->> weights = [Gw[u][v]['weight'] for u,v in Gw.edges()]
->> nx.draw(Gw,width=weights,with_labels=True,node_size=700)
->> plt.show()
+Gw = nx.Graph()
+Gw.add_edge('a','b', weight = 0.1)
+Gw.add_edge('b','c', weight = 1.5)
+Gw.add_edge('a','c', weight = 1.0)
+Gw.add_edge('c','d', weight = 2.2)
+weights = [Gw[u][v]['weight'] for u,v in Gw.edges()]
+nx.draw(Gw,width=weights,with_labels=True,node_size=700)
+plt.show()
 ```
 
 
