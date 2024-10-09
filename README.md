@@ -194,7 +194,19 @@ dic1['ocelote'].split(',')
 dic1[[3,4]]='no se puede'
 ```
 
+$${\color{lightblue}\textrm{Otra forma de hacer diccionarios}}$$
 
+```python
+#Elemento a elemento
+D={}
+D['Oaxaca']='Oaxaca'
+#Por tuplas
+D=dict([('Chiapas', 'Tuxtla Gutierrez'),('Yucatan','Merida')])
+#A partir de dos listas
+lista1=['a','b','c','d']
+lista2=[12,13,14,15]
+D=dict(zip(lista1,lista2))
+```
 
 
 $${\color{lightblue}\textrm{Construcción de gráficas con NetworkX}}$$
