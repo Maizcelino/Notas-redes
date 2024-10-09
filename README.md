@@ -32,6 +32,163 @@ python3 get-pip.py
 
 $${\color{lightblue}\textrm{Nociones básicas de Python}}$$
 
+$${\color{lightblue}\textrm{Variables}}$$
+
+No se necesitan declarar las variables
+
+```python
+x=13
+y=x+3.0
+```
+
+Asignación múltiple
+
+```python
+a,b=4,5
+```
+
+Tipos de variable
+```python
+type(y) 
+float(x)
+int(y)
+```
+
+En python una cadena se declara con comilla simple 
+```python
+adn='agtcaggagttaaccata'
+adn_corto='cgta'
+```
+o se declara con comillas
+```python
+frase="I can’t Believe It, It’s amazing"
+texto='UPN 201, Educar para transformar'
+```
+
+```python
+adn+adn_corto
+texto*3
+frase.lower()
+len(adn)
+adn.count('g')
+adn.replace('g','TAZA')
+'a' in adn
+texto.split()
+texto.split(',')
+cadena='3*una,*español-ingles,*algo'
+cadena.split('*')
+```
+
+> [!IMPORTANT]
+> Ejercicio
+> 
+> Escribir una cadena con las letras a,g,t,c y calcular el porcentaje de ocurrencia de a y c.
+>
+> Intercambiar la a por la c y la c por la a.
+
+> [!NOTE]
+> El uso de los índices es similar tanto para listas, cadenas, etc. 
+
+
+```python
+# toma en la cadena desde el índice inicio hasta el indice fin-1 
+pos='Escuela de Otoño de Biología Matemática'
+# saltos dice de cuanto en cuanto se van tomando. Si no se pone, se va de uno en uno
+pos[inicio:final:saltos]
+```
+
+```python 
+pos[0]
+pos[1:4]
+pos[5:2]
+pos[5:2:-1]
+pos[1:]
+pos[1:100]
+pos=[::-1]
+pos[:-3]
+pos[-3:]
+```
+
+$${\color{lightblue}\textrm{Listas}}$$
+
+```python
+#colección de objetos
+L1=[2,7,11,-3]
+#distintos tipos de elementos
+L2=[5,'gato',1,0]
+#puede estar vacia
+c=[]
+#puede ser una lista de listas 
+Listas=[12,[‘a’,1,2,3],[b,[c,14]]]
+#genera una lista desde inicio hasta final menos uno.
+#paso si se da debe ser entero,indica el tamaño de paso.
+range(inicio,final,paso)
+```
+
+tutorial 
+https://recursospython.com/guias-y-manuales/listas-y-tuplas/
+
+```python
+L1+L2
+L2*3
+x=L2[-1]
+z=L1[2:4]
+L1[0]=250
+len(Listas)
+Listas[1][2]
+L1.index(11)
+L2.append(-12)
+```
+
+$${\color{lightblue}\textrm{Tuplas}}$$
+
+```python
+#tupla de objetos
+T=(1,2,4,'x0',-13)
+#tupla de un elemento
+f=(4,)
+#tupla vacia para 2.x, en 3.x no lleva coma
+g=(,)
+#tupla de tuplas
+Tupla=(12,(4,[1,3]),(3,[6,2]))
+```
+
+> [!NOTE]
+> Las tuplas son inmutables
+
+```python
+#índice
+T[0]
+T[0]='hola'
+#índice de la tupla de tuplas
+Tupla[2][1]
+```
+
+$${\color{lightblue}\textrm{Diccionarios}}$$
+```python
+basta={'nombre':'Maria','lugar':'Mexico', 'fruto':'mazorca, mango, manzana'}
+#se agrega un elemento
+basta['animal']='mamut'     
+#diccionario vacio
+D={}                                  
+```
+
+```python
+basta['nombre']
+len(basta)
+basta.keys()
+basta.values()
+basta[(3,4)]=[5,7,'si se puede']
+basta['nombre']='Miguel'
+del basta['animal']
+basta['fruto'].split()
+basta['fruto'].split(',')
+basta[[3,4]]='no se puede'
+```
+
+
+
+
 $${\color{lightblue}\textrm{Construcción de gráficas con NetworkX}}$$
 
 aqui se pone
