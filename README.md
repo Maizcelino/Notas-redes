@@ -8,12 +8,6 @@ Estas notas sirven para construir redes desde archivos, están organizadas de la
 - $${\color{lightblue}\textrm{Medidas usuales de redes}}$$
 
 
-
-
-<img width="771" alt="Screenshot" src="https://github.com/user-attachments/assets/d6388dfa-e19d-4888-a293-8c514cc860b0">
-
-
-
   
 $${\color{lightblue}\textrm{\large Instalación de la última versión de Phyton para Windows, Linux y para Mac}}$$
 
@@ -262,30 +256,65 @@ nx.draw(Gw,width=weights,with_labels=True,node_size=700)
 plt.show()
 ```
 
+$${\color{lightblue}\textrm{Dibujar gráfica con pesos }}$$
+
+```python 
+Gw = nx.Graph()
+Gw.add_edge('a','b', weight = 3)
+Gw.add_edge('b','c', weight = 1.5)
+Gw.add_edge('a','c', weight = 1.0)
+Gw.add_edge('c','d', weight = 2.2)
+weights = [Gw[u][v]['weight'] for u,v in Gw.edges()]  
+pos =nx.spring_layout(Gw)
+nx.draw_networkx_nodes(Gw, pos, node_size=500) #nodos
+nx.draw_networkx_edges(Gw, pos,   width=weights, alpha=0.5, edge_color='black') 
+nx.draw_networkx_edge_labels(Gw,pos,edge_labels={(u,v):Gw[u][v]['weight'] for u,v in Gw.edges()} ,font_color='red')
+nx.draw_networkx_labels(Gw, pos, font_size=20, font_family='sans-serif')  #etiquetas para nodos
+plt.axis('off') 
+plt.show()
+```
+
+> [!NOTE]
+> Se le pueden poner tantos atributos a los artistas y a los nodos como se quieran, lo importante es tomar en cuenta que el conjunto de nodos y aristas es un objeto tipo diccionario: peso =  25332, etiqueta = 'ljdfñlkajs' , perrro = 'gajlkñdsa', etc.. 
+
+```python 
+GL.add_edge('a','b', weight = 3, label = 'primera', perro = "tomas")
+```
+$${\color{lightblue}\textrm{Tipos de gráficas}}$$
+
+```python 
+G=nx.Graph() 			# no dirigida, simple
+G.to_directed()			# se convierte a dirigida
+H=nx.DiGraph			# dirigida, simple
+H.to_undirected()		# se convierte a no dirigida
+MG=nx.MultiGraph()	# no dirigida, aristas múltiples
+MD=nx.MultiDiGraph()	# dirigida, aristas múltiples
+```
+
+$${\color{lightblue}\textrm{Ejemplo digráfica}}$$
+
+```python
+yeastG = nx.read_edgelist('yeast.data', create_using=nx.DiGraph())
+#cantidad de aristas
+yeastG.size()
+# cantidad de nodos
+yeastG.order()
+#lee el archivo y crea una digráfica
+# se crea un diccionario 
+salida=dict(yeastG.out_degree())
+#accede valores del diccionario
+# se hace el histograma
+grado_salida=salida.values()
+plt.hist(grado_salida) 
+plt.show
+```
 
 
 
-
-
-$${\color{lightblue}\textrm{Medidas usuales de redes}}$$
+$${\color{lightblue}\textrm{\large Medidas usuales de redes}}$$
 
 ```python
 adn.count('g')
 ```
 
 
-> [!NOTE]
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-> 
