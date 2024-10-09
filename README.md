@@ -6,6 +6,14 @@ Estas notas sirven para construir redes desde archivos, están organizadas de la
 - $${\color{lightblue}\textrm{Nociones básicas de Python}}$$
 - $${\color{lightblue}\textrm{Construcción de gráficas con NetworkX}}$$
 - $${\color{lightblue}\textrm{Medidas usuales de redes}}$$
+
+
+
+
+<img width="771" alt="Screenshot" src="https://github.com/user-attachments/assets/d6388dfa-e19d-4888-a293-8c514cc860b0">
+
+
+
   
 $${\color{lightblue}\textrm{Instalación de la última versión de Phyton para Windows, Linux y para Mac}}$$
 
