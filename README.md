@@ -15,13 +15,13 @@ Estas notas sirven para construir redes desde archivos, están organizadas de la
 
 
   
-$${\color{lightblue}\textrm{Instalación de la última versión de Phyton para Windows, Linux y para Mac}}$$
+$${\color{lightblue}\textrm{\large Instalación de la última versión de Phyton para Windows, Linux y para Mac}}$$
 
 Ir a la siguiente liga, descargar la última versión de python y seguir las instrucciones de instalación
 ```html
 https://www.python.org/downloads/
 ```
-$${\color{lightblue}\textrm{Instalación de pip3}}$$
+$${\color{lightblue}\textrm{\large Instalación de pip3}}$$
 
 Abrir terminal en windows
 1. Haz clic derecho en el menú Inicio de Windows
@@ -38,7 +38,7 @@ Con CD moverse a la carpeta donde fue descargado y escribir el siguiente comando
 python3 get-pip.py
 ```
 
-$${\color{lightblue}\textrm{Nociones básicas de Python}}$$
+$${\color{lightblue}\textrm{\large Nociones básicas de Python}}$$
 
 $${\color{lightblue}\textrm{Variables}}$$
 
@@ -209,7 +209,7 @@ D=dict(zip(lista1,lista2))
 ```
 
 
-$${\color{lightblue}\textrm{Construcción de gráficas con NetworkX}}$$
+$${\color{lightblue}\textrm{\large Construcción de gráficas con NetworkX}}$$
 
 ```python
 import networkx as nx
