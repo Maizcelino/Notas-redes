@@ -339,11 +339,4 @@ nx.pagerank(G,alpha =0.9)		#investigar
 
 $${\color{lightblue}\textrm{Importar redes desde Excel}}$$
 
-```python
-import pandas as pd
-archivo=pd.read_excel("Verticesmamiferos.xlsx") 	#se lee el archivo de excel
-nombre_nodo=archivo['nombre'].values.tolist()	#la columna ‘nombre’ de excel se hace lista
-clave_nodo=archivo['clave'].values.tolist()		#la columna ‘clave’ de excel se hace lista
-labels=dict(zip(clave_nodo,nombre_nodo))		#se hace un diccionario con las listas
-```
-
+Se correrá el código de redes de co-ocurrencia que está compartido del Github de Bety
