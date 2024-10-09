@@ -50,38 +50,37 @@ sudo python3 get-pip.py
 
 $${\color{lightblue}\textrm{\large Nociones básicas de Python}}$$
 
+Aquí solo abordaremos los requerimientos básicos para construir redes. Una tutorial más completo de Python lo puedes consultar en ésta liga
+```html
+https://recursospython.com/guias-y-manuales/listas-y-tuplas/
+```
+
 $${\color{lightblue}\textrm{Variables}}$$
 
-No se necesitan declarar las variables
+No se necesitan declarar las variables y se puede hacer asignación múltiple
 
 ```python
 x=13
 y=x+3.0
+a,b=4,'ggtc'
 ```
 
-Asignación múltiple
-
-```python
-a,b=4,5
-```
-
-Tipos de variable
+Si a una variable de tipo entero le sumas una de tipo flotante, el resultado es una variable de tipo flotante. Tambien se puede cambiar el tipo de variable
 ```python
 type(y) 
 float(x)
 int(y)
 ```
 
-En python una cadena se declara con comilla simple 
+En python una cadena se declara con comilla simple o se declara con comillas
+
 ```python
 adn='agtcaggagttaaccata'
 adn_corto='cgta'
-```
-o se declara con comillas
-```python
 frase="I can’t Believe It, It’s amazing"
 texto='UPN 201, Educar para transformar'
 ```
+Operaciones con dadenas
 
 ```python
 adn+adn_corto
