@@ -313,8 +313,35 @@ plt.show
 
 $${\color{lightblue}\textrm{\large Medidas usuales de redes}}$$
 
+$${\color{lightblue}\textrm{Tomar la componente conexa más grande (CC max)}}$$
+
 ```python
-adn.count('g')
+yeastG= nx.read_edgelist('yeast.data',create_using=nx.DiGraph())
+YNG=yeastG.to_undirected()			#yeastG la vuelve no dirigida
+largest_cc = max(nx.connected_components(YNG), key=len) #set de nodos de la CC max
+MCC=YNG.subgraph(largest_cc)		#crea una subgrafica con el conjuto largest_cc
+nx.draw(MCC)
+plt.show()
 ```
 
+$${\color{lightblue}\textrm{excentricidad, diámetro y radio de yeast.data}}$$
+
+```python
+nx.diameter(MCC)
+nx.radius(MCC)
+MCC.degree()
+nx . closeness_centrality ( G )		#investigar
+nx . betweenness_centrality ( G )		#investigar	
+nx . pagerank (G , alpha =0.9)		#investigar
+```
+
+$${\color{lightblue}\textrm{Importar redes desde Excel}}$$
+
+```python
+import pandas as pd
+archivo=pd.read_excel("Verticesmamiferos.xlsx") 	#se lee el archivo de excel
+nombre_nodo=archivo['nombre'].values.tolist()	#la columna ‘nombre’ de excel se hace lista
+clave_nodo=archivo['clave'].values.tolist()		#la columna ‘clave’ de excel se hace lista
+labels=dict(zip(clave_nodo,nombre_nodo))		#se hace un diccionario con las listas
+```
 
