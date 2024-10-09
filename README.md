@@ -2,7 +2,7 @@
 Estas notas sirven para construir redes desde archivos, están organizadas de la siguiente forma:
 Estas notas sirven para construir redes desde archivos, están organizadas de la siguiente forma:
 - $${\color{lightblue}\textrm{Instalación de la última versión de Phyton para Windows, Linux y para Mac}}$$
-- $${\color{lightblue}\textrm{Instalación de pip o pip3}}$$
+- $${\color{lightblue}\textrm{Instalación de pip3}}$$
 - $${\color{lightblue}\textrm{Nociones básicas de Python}}$$
 - $${\color{lightblue}\textrm{Construcción de gráficas con NetworkX}}$$
 - $${\color{lightblue}\textrm{Medidas usuales de redes}}$$
@@ -11,23 +11,36 @@ $${\color{lightblue}\textrm{Instalación de la última versión de Phyton para W
 
 Ir a la siguiente liga, descargar la última versión de python y seguir las instrucciones de instalación
 ```html
-(https://www.python.org/downloads/)
+https://www.python.org/downloads/
+```
+$${\color{lightblue}\textrm{Instalación de pip3}}$$
+
+Abrir terminal en windows
+1. Haz clic derecho en el menú Inicio de Windows
+2. Haz clic izquierdo en la opción Run o Ejecutar.
+3. Escribe en el recuadro "cmd" y haz clic en "Aceptar" para abrir la terminal:
+
+Para instalar pip3 copiar lo siguiente en la terminal
+
+```python
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+```
+Con CD moverse a la carpeta donde fue descargado y escribir el siguiente comando para instalar pip3 y todas sus dependencias
+```python
+python3 get-pip.py
 ```
 
+$${\color{lightblue}\textrm{Nociones básicas de Python}}$$
 
-  Instalación de pip o pip3
+$${\color{lightblue}\textrm{Construcción de gráficas con NetworkX}}$$
 
-  Nociones básicas de Python
+aqui se pone
+
+$${\color{lightblue}\textrm{Medidas usuales de redes}}$$
+
 ```python
 adn.count('g')
 ```
-
-  Construcción de gráficas con NetworkX
-```python
-adn.count('g')
-```
-
-  Medidas usuales de redes.
 
 
 > [!NOTE]
