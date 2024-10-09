@@ -279,10 +279,10 @@ plt.show()
 ```
 
 > [!NOTE]
-> Se le pueden poner tantos atributos a los artistas y a los nodos como se quieran, lo importante es tomar en cuenta que el conjunto de nodos y aristas es un objeto tipo diccionario: peso =  25332, etiqueta = 'ljdfñlkajs' , perrro = 'gajlkñdsa', etc.. 
+> Se le pueden poner tantos atributos a los artistas y a los nodos como se quieran, lo importante es tomar en cuenta que el conjunto de nodos y aristas es un objeto tipo diccionario
 
 ```python 
-GL.add_edge('a','b', weight = 3, label = 'primera', perro = "tomas")
+GL.add_edge('a','b', weight = 3, label = 'poliniza')
 ```
 $${\color{lightblue}\textrm{Tipos de gráficas}}$$
 
@@ -310,10 +310,8 @@ salida=dict(yeastG.out_degree())
 # se hace el histograma
 grado_salida=salida.values()
 plt.hist(grado_salida) 
-plt.show
+plt.show()
 ```
-
-
 
 $${\color{lightblue}\textrm{\large Medidas usuales de redes}}$$
 
@@ -321,22 +319,22 @@ $${\color{lightblue}\textrm{Tomar la componente conexa más grande (CC max)}}$$
 
 ```python
 yeastG= nx.read_edgelist('yeast.data',create_using=nx.DiGraph())
-YNG=yeastG.to_undirected()			#yeastG la vuelve no dirigida
-largest_cc = max(nx.connected_components(YNG), key=len) #set de nodos de la CC max
-MCC=YNG.subgraph(largest_cc)		#crea una subgrafica con el conjuto largest_cc
-nx.draw(MCC)
+Y_undirected=yeastG.to_undirected()			#yeastG la vuelve no dirigida
+largest_cc = max(nx.connected_components(Y_undirected), key=len) #set de nodos de la CC max
+Y_MaxCC=Y_undirected.subgraph(largest_cc)		#crea una subgrafica con el conjuto largest_cc
+nx.draw(Y_MaxCC)
 plt.show()
 ```
 
 $${\color{lightblue}\textrm{excentricidad, diámetro y radio de yeast.data}}$$
 
 ```python
-nx.diameter(MCC)
-nx.radius(MCC)
-MCC.degree()
-nx . closeness_centrality ( G )		#investigar
-nx . betweenness_centrality ( G )		#investigar	
-nx . pagerank (G , alpha =0.9)		#investigar
+nx.diameter(Y_MaxCC)
+nx.radius(Y_MaxCC)
+Y_MaxCC.degree()
+nx.closeness_centrality(G)		#investigar
+nx.betweenness_centrality(G)		#investigar	
+nx.pagerank(G,alpha =0.9)		#investigar
 ```
 
 $${\color{lightblue}\textrm{Importar redes desde Excel}}$$
