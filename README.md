@@ -16,10 +16,14 @@ https://www.python.org/downloads/
   Instalación de pip o pip3
 
   Nociones básicas de Python
-
+```python
+adn.count('g')
+```
 
   Construcción de gráficas con NetworkX
-
+```python
+adn.count('g')
+```
 
   Medidas usuales de redes.
 
