@@ -235,6 +235,38 @@ G.remove_node(9)				#elimina nodos
 G.remove_edges_from( [(2,'x'),(23,45)] ) 	#elimina aristas
 ```
 
+```python 
+import matplotlib.pyplot as plt
+K10 = nx.complete_graph(10)
+K10.nodes()
+K10.size()
+nx.draw(K10)
+plt.show()
+nx.draw_circular(K10)
+plt.show()
+nx.draw_circular(K10,node_color='b',node_size=500,alpha=0.3)
+plt.show()
+K10.degree(3)
+K10.degree()
+K10.neighbors(3)
+```
+
+```python 
+>> Gw = nx.Graph()
+>> Gw.add_edge('a','b', weight = 0.1)
+>> Gw.add_edge('b','c', weight = 1.5)
+>> Gw.add_edge('a','c', weight = 1.0)
+>> Gw.add_edge('c','d', weight = 2.2)
+>> weights = [Gw[u][v]['weight'] for u,v in Gw.edges()]
+>> nx.draw(Gw,width=weights,with_labels=True,node_size=700)
+>> plt.show()
+```
+
+
+
+
+
+
 $${\color{lightblue}\textrm{Medidas usuales de redes}}$$
 
 ```python
