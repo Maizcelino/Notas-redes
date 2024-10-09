@@ -166,24 +166,24 @@ Tupla[2][1]
 
 $${\color{lightblue}\textrm{Diccionarios}}$$
 ```python
-basta={'nombre':'Maria','lugar':'Mexico', 'fruto':'mazorca, mango, manzana'}
+dic1={'jaguar':'venados, pecaríes, tapires','ocelote':'roedores, conejos, ciervos', 'puma':'zorros'}
 #se agrega un elemento
-basta['animal']='mamut'     
+dic1['puma']='venado, puerco espin, mapaches'    
 #diccionario vacio
 D={}                                  
 ```
 
 ```python
-basta['nombre']
-len(basta)
-basta.keys()
-basta.values()
-basta[(3,4)]=[5,7,'si se puede']
-basta['nombre']='Miguel'
-del basta['animal']
-basta['fruto'].split()
-basta['fruto'].split(',')
-basta[[3,4]]='no se puede'
+dic1['jaguar']
+len(dic1)
+dic1.keys()
+dic1.values()
+dic1[(3,4)]=[5,7,'si se puede']
+dic1['nombre']='Miguel'
+del dic1['jaguar']
+dic1['ocelote'].split()
+dic1['ocelote'].split(',')
+dic1[[3,4]]='no se puede'
 ```
 
 
