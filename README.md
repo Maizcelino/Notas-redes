@@ -8,9 +8,9 @@ Estas notas sirven para construir redes desde archivos, están organizadas de la
 
   Instalación de Python 3.13  para Windows y para Mac
 
-  Ir a la siguiente liga y descargar la última versión de python
+Ir a la siguiente liga y descargar la última versión de python
 
-  https://www.python.org/downloads/
+https://www.python.org/downloads/
 
   Instalación de pip o pip3
 
