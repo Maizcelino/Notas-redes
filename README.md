@@ -1,12 +1,13 @@
 # Notas-redes
 Estas notas sirven para construir redes desde archivos, están organizadas de la siguiente forma:
-- $${\color{red}Red}$$ Instalación de Phyton 3.13.0 para Windows y para Mac
-- Instalación de pip o pip3
-- Nociones básicas de Python
-- Construcción de gráficas con NetworkX
-- Medidas usuales de redes.
-
-  Instalación de Python 3.13  para Windows y para Mac
+Estas notas sirven para construir redes desde archivos, están organizadas de la siguiente forma:
+- $${\color{lightblue}Instalación de Phyton 3.13.0 para Windows y para Mac}$$
+- $${\color{lightblue}Instalación de pip o pip3}$$
+- $${\color{lightblue}Nociones básicas de Python}$$
+- $${\color{lightblue}Construcción de gráficas con NetworkX}$$
+- $${\color{lightblue}Medidas usuales de redes}$$
+  
+$${\color{lightblue}Instalación de Phyton 3.13.0 para Windows y para Mac}$$
 
 Ir a la siguiente liga y descargar la última versión de python
 
