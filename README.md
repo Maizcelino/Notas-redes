@@ -15,8 +15,13 @@ Ir a la siguiente liga, descargar la última versión de python y seguir las ins
 ```html
 https://www.python.org/downloads/
 ```
+Se recomienda instalar Visual Studio Code y usarlo como editor de texto. Ir a la siguiente liga, descargar e instalar.
+```html
+https://code.visualstudio.com/download
+```
 $${\color{lightblue}\textrm{\large Instalación de pip3}}$$
 
+$${\color{lightblue}\textrm{Windows}}
 Abrir terminal en windows
 1. Haz clic derecho en el menú Inicio de Windows
 2. Haz clic izquierdo en la opción Run o Ejecutar.
@@ -30,6 +35,15 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 Con CD moverse a la carpeta donde fue descargado y escribir el siguiente comando para instalar pip3 y todas sus dependencias
 ```python
 python3 get-pip.py
+```
+$${\color{lightblue}\textrm{Mac o Linux}}
+En terminal escribir
+```python
+curl -O https://bootstrap.pypa.io/get-pip.py
+```
+Nuevamente en terminal escribir
+```python
+sudo python3 get-pip.py
 ```
 
 $${\color{lightblue}\textrm{\large Nociones básicas de Python}}$$
